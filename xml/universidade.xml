@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<universidade xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="universidade.xsd">
+  <historia>
+    A Universidade das Caxinas foi fundada em 2025 e representa a fusão entre tradição marítima e inovação académica.
+  </historia>
+
+  <cursos>
+    <curso>
+      <nome>Ciências do Mar</nome>
+      <departamento>Ciências Naturais</departamento>
+      <grau>Licenciatura</grau>
+    </curso>
+    <curso>
+      <nome>Tecnologias da Informação</nome>
+      <departamento>Engenharia Informática</departamento>
+      <grau>Licenciatura</grau>
+    </curso>
+  </cursos>
+
+  <inscricoes>
+    <inscricao>
+      <nome>Ana Sousa</nome>
+      <email>ana@mail.com</email>
+      <genero>Feminino</genero>
+      <grau_academico>12º ano</grau_academico>
+      <curso>Ciências do Mar</curso>
+      <mensagem>Gostava de saber se há alojamento para estudantes.</mensagem>
+    </inscricao>
+  </inscricoes>
+
+  <fundadores>
+    <fundador>
+      <nome>João Silva</nome>
+      <funcao>Presidente do Conselho Fundador</funcao>
+      <ano_fundacao>2025</ano_fundacao>
+    </fundador>
+    <fundador>
+      <nome>Maria Oliveira</nome>
+      <funcao>Vice-presidente</funcao>
+      <ano_fundacao>2025</ano_fundacao>
+    </fundador>
+    <fundador>
+      <nome>Luís Costa</nome>
+      <funcao>Diretor Acadêmico</funcao>
+      <ano_fundacao>2025</ano_fundacao>
+    </fundador>
+    <fundador>
+      <nome>Ana Santos</nome>
+      <funcao>Coordenadora de Ensino</funcao>
+      <ano_fundacao>2025</ano_fundacao>
+    </fundador>
+    <fundador>
+      <nome>Carlos Almeida</nome>
+      <funcao>Consultor Externo</funcao>
+      <ano_fundacao>2025</ano_fundacao>
+    </fundador>
+  </fundadores>
+</universidade>

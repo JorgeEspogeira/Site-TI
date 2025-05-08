@@ -1,0 +1,121 @@
+body {
+    background-image: url('../img/cursos.png');
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    padding-top: 60px;  /* Ajuste o padding para compensar o header fixo */
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;  /* Usando list-style sem especificar o tipo, já que foi removido o type */
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+nav ul li a img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+nav ul li a:hover {
+    color: #f1c40f;
+}
+
+.courses-list {
+    margin-left: 50%; 
+    margin-top: 40px;
+}
+
+.courses-list a {
+    text-decoration: none;
+    color: #2d3a3a;
+    font-weight: bold;
+    display: block;
+    margin-top: 1em; 
+}
+
+.courses-list li {
+    list-style-type: none;
+}
+
+.disciplinas {
+    display: none; 
+    margin-left: 20px; 
+}
+
+.disciplinas li {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.courses-list a:hover {
+    color: #779aa2;
+    cursor: pointer;
+}
+
+.board-title {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 39px;
+    padding-left: 43em;
+}
+
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Adicionando Responsividade */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .board-title {
+        font-size: 24px;
+        padding-left: 1em;  /* Ajuste da posição do título em telas pequenas */
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .courses-list {
+        margin-left: 0;  /* Ajustando a margem da lista em telas menores */
+    }
+}

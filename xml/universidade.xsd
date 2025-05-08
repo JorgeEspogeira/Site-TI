@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="universidade">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="historia" type="xs:string"/>
+        
+        <xs:element name="cursos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="curso" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="nome" type="xs:string"/>
+                    <xs:element name="departamento" type="xs:string"/>
+                    <xs:element name="grau" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        
+        <xs:element name="inscricoes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="inscricao" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="nome" type="xs:string"/>
+                    <xs:element name="email" type="xs:string"/>
+                    <xs:element name="genero" type="xs:string"/>
+                    <xs:element name="grau_academico" type="xs:string"/>
+                    <xs:element name="curso" type="xs:string"/>
+                    <xs:element name="mensagem" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="fundadores">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fundador" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="nome" type="xs:string"/>
+                    <xs:element name="funcao" type="xs:string"/>
+                    <xs:element name="ano_fundacao" type="xs:gYear"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

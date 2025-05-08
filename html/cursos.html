@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidade das Caxinas</title>
+    <link rel="stylesheet" href="../css/cursos.css">
+</head>
+<body>
+    <div class="container">   
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="../html/principal.html"><p>Inicio</p></a></li>
+                    <li><a href="../html/cursos.html"><p>Cursos</p></a></li>
+                    <li><a href="../html/registo.html"><p>Registro</p></a></li>
+                    <li><a href="https://www.google.com/maps?q=Caxinas,+Vila+do+Conde"><p>Localização</p></a></li>
+                    <li><a href="../html/sobre.html"><p>Sobre</p></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="classroom">
+            <div class="whiteboard">
+                <h1 class="board-title"><strong>Unidades curriculares:</strong></h1>
+                <ul class="courses-list">
+                    <li><a href="javascript:void(0);" onclick="toggleDisciplinas('cienciasMar')">Ciências do Mar</a>
+                        <ul id="cienciasMar" class="disciplinas">
+                            <li><a href="../html/registo.html">Biologia Marinha</a></li>
+                            <li><a href="../html/registo.html">Oceanografia Física</a></li>
+                            <li><a href="../html/registo.html">Geologia Marinha</a></li>
+                            <li><a href="../html/registo.html">Ecologia Marinha</a></li>
+                            <li><a href="../html/registo.html">Gestão de Recursos Marinhos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0);" onclick="toggleDisciplinas('gestaoRecursos')">Gestão de Recursos Naturais</a>
+                        <ul id="gestaoRecursos" class="disciplinas">
+                            <li><a href="../html/registo.html">Gestão Florestal</a></li>
+                            <li><a href="../html/registo.html">Conservação da Biodiversidade</a></li>
+                            <li><a href="../html/registo.html">Energias Renováveis</a></li>
+                            <li><a href="../html/registo.html">Planeamento Ambiental</a></li>
+                            <li><a href="../html/registo.html">Políticas de Recursos Naturais</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0);" onclick="toggleDisciplinas('antropologia')">Antropologia Cultural</a>
+                        <ul id="antropologia" class="disciplinas">
+                            <li><a href="../html/registo.html">Antropologia Social</a></li>
+                            <li><a href="../html/registo.html">Etnografia e Métodos de Pesquisa</a></li>
+                            <li><a href="../html/registo.html">Antropologia de Culturas</a></li>
+                            <li><a href="../html/registo.html">Antropologia Urbana</a></li>
+                            <li><a href="../html/registo.html">Antropologia da Religião</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0);" onclick="toggleDisciplinas('artesDesign')">Artes e Design</a>
+                        <ul id="artesDesign" class="disciplinas">
+                            <li><a href="../html/registo.html">História da Arte</a></li>
+                            <li><a href="../html/registo.html">Design Gráfico</a></li>
+                            <li><a href="../html/registo.html">Animação Digital</a></li>
+                            <li><a href="../html/registo.html">Fotografia Artística</a></li>
+                            <li><a href="../html/registo.html">Design de Interação</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0);" onclick="toggleDisciplinas('tecnologiasInformacao')">Tecnologias da Informação</a>
+                        <ul id="tecnologiasInformacao" class="disciplinas">
+                            <li><a href="../html/registo.html">Algoritmos e Estruturas de Dados</a></li>
+                            <li><a href="../html/registo.html">Redes de Computadores</a></li>
+                            <li><a href="../html/registo.html">Desenvolvimento Web</a></li>
+                            <li><a href="../html/registo.html">Banco de Dados</a></li>
+                            <li><a href="../html/registo.html">Inteligência Artificial</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
+

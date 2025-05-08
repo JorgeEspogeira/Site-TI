@@ -1,0 +1,147 @@
+body {
+    background-image: url('../img/registo_4k.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0; 
+    margin-right: 20%;   
+    margin-top: -2%;
+    overflow-y: hidden;
+    
+}
+
+.campo{
+    margin-bottom: 0.5em;
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    color: #374b3d;
+    display: block;
+}
+
+
+.campo input[type="text"],.campo input[type="email"],.campo input[type="password"], .campo select, .campo textarea{
+    padding: 0.2em;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px rbga(0,0,0,0.2);
+    display: block;
+    border-radius: 15px;
+    width: 50%;
+    color: #374b3d;
+} 
+
+.campo select option{
+    padding-right: 2em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: white;
+}
+
+
+#check{
+    display: inline-block
+}
+
+input[type="radio"] {
+    accent-color: #384a3d; 
+}
+
+input[type="radio"]:checked {
+    background-color: #384a3d; 
+}
+
+button {
+    padding: 8px 18px;  
+    background-color: #384a3d;  
+    color: white;  
+    border: none;  
+    border-radius: 20px;  
+    cursor: pointer;  
+    font-size: 16px; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+button:hover {
+    background-color: #2c3e50;  
+    transform: scale(1.1);  
+}
+
+button:active {
+    background-color: #2c3e50;  
+    transform: scale(1);  
+}
+
+.campo textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #2c3e50;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 1em;
+    resize: vertical;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+.campo textarea:focus {
+    background-color: #f5f5f5;
+    outline: none;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+nav ul li a img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+nav ul li a:hover {
+    color: #f1c40f;
+}
+
+body {
+    padding-top: 60px; 
+}
+
+
+
+

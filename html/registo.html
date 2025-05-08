@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidade das Caxinas</title>
+    <link rel="stylesheet" href="../css/registo.css">
+</head>
+<body>
+    <div class="container">   
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="../html/principal.html">Inicio</a></li>
+                    <li><a href="../html/cursos.html">Cursos</a></li>
+                    <li><a href="../html/registo.html">Registo</a></li>
+                    <li><a href="https://www.google.com/maps?q=Caxinas,+Vila+do+Conde">Localização</a></li>
+                    <li><a href="../html/sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <form>
+            <div class="grupo">
+                <div class="campo">
+                    <label for="nome"><strong>Nome Completo:</strong></label>
+                    <input type="text" name="nome" id="nome" required> 
+                </div>
+                <div class="campo">
+                    <label for="email"><strong>Email:</strong></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="campo">
+                    <label for="password"><strong>Palavra-passe desejada</strong></label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+            </div>
+        
+            <div class="campo">
+                <label for="genero"><strong>Género</strong></label>   
+                <label>
+                    <input type="radio" name="genero" value="Masculino">Masculino 
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="Feminino">Feminino
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="Outro">Outro
+                </label>
+            </div>
+        
+            <div class="campo">
+                <label for="grauAcademico"><strong>Grau Académico Anterior</strong></label>
+                <select id="grauAcademico" name="grauAcademico">
+                    <option selected disabled value="">Selecione o seu grau</option>
+                    <option value="Sem formação académica">Sem formação académica</option>
+                    <option value="Educação Básica Incompleta">Educação Básica Incompleta</option>
+                    <option value="Educação Básica Completa (9º ano)">Educação Básica Completa (9º ano)</option>
+                    <option value="Educação Secundária Incompleta">Educação Secundária Incompleta</option>
+                    <option value="Educação Secundária Completa (12º ano)">Educação Secundária Completa (12º ano)</option>
+                    <option value="Curso Profissional (Nível 4)">Curso Profissional (Nível 4)</option>
+                    <option value="Curso de Especialização Tecnológica">Curso de Especialização Tecnológica</option>
+                    <option value="Licenciatura (1º ciclo)">Licenciatura (1º ciclo)</option>
+                    <option value="Mestrado (2º ciclo)">Mestrado (2º ciclo)</option>
+                    <option value="Doutoramento (3º ciclo)">Doutoramento (3º ciclo)</option>
+                    <option value="Outro">Outro</option>
+                </select>
+            </div>
+        
+            <div class="campo">
+                <label for="licenciatura"><strong>Qual a Licenciatura que pretende frequentar?</strong></label>
+                <select name="licenciatura" id="licenciatura" required>
+                    <option value="" disabled selected>Selecione o seu curso preferido</option>
+                    <option value="Artes Multimédia">Artes Multimédia</option>
+                    <option value="Ciências da Comunicação">Ciências da Comunicação</option>
+                    <option value="Informática">Informática</option>
+                    <option value="Relações Públicas e Gestão de Comunicação">Relações Públicas e Gestão de Comunicação</option>
+                    <option value="Tecnologias de Comunicação Multimédia">Tecnologias de Comunicação Multimédia</option>
+                    <option value="Criminologia">Criminologia</option>
+                    <option value="Psicologia">Psicologia</option>
+                    <option value="Educação Física e Desporto">Educação Física e Desporto</option>
+                    <option value="Gestão de Desporto">Gestão de Desporto</option>
+                    <option value="Energias Renováveis">Energias Renováveis</option>
+                    <option value="Gestão de Empresas">Gestão de Empresas</option>
+                    <option value="Gestão de Marketing">Gestão de Marketing</option>
+                    <option value="Gestão de Recursos Humanos">Gestão de Recursos Humanos</option>
+                    <option value="Turismo">Turismo</option>
+                </select>
+            </div>
+        
+            <div class="campo">
+                <label for="mensagem"><strong>Mensagem (opcional)</strong></label>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+            </div>
+        
+            <button type="button" onclick="validateForm()">Submeter</button>
+        </form>
+
+        <script src="../js/script.js"></script>
+    </div>
+</body>
+</html>

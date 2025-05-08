@@ -1,0 +1,114 @@
+body {
+    color: white;
+    background-color: black;
+    background-image: url('../img/sobre4k.png');
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+}
+
+h1{
+    text-align: center;
+    margin-top: 2%;
+    color:white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      
+}
+
+section{
+    margin-top: 3%;
+    margin-left: 1%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+nav ul li a img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+
+nav ul li a:hover {
+    color: #f1c40f;
+}
+
+body {
+    padding-top: 60px; 
+}
+
+
+table {
+    width: 23%; 
+    border-collapse: collapse;
+    margin-top: 5%; 
+    margin-bottom: 20px; 
+}
+
+
+h2 {
+    margin-top: 18%;  
+    margin-bottom: -3%; 
+}
+
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #374b3d;
+}
+
+th {
+    background-color: #374b3d;
+    color: white;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .fundadores h2 {
+        font-size: 18px;
+    }
+}
+
